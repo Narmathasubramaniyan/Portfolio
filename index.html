@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Narmatha Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
+</head>
+<body>
+
+<!--------------header----------------------->
+<nav id="desktop-nav">
+  <div class="logo">Narmatha's Portfolio</div>
+  <div>  
+  <ul class="nav-links">
+      <li> <a href="#about">About</a></li>
+      <li> <a href="#skill">Skills</a></li>
+      <li> <a href="#project">Projects</a></li>
+      <li> <a href="#contact" >Contact</a></li> 
+  </ul> 
+</div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo">Narmatha's Portfolio</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+    <span></span> <!--lines of the hamburger-->
+    <span></span>
+    <span></span>
+    </div>
+    <div class="menu-links">
+      <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+      <li> <a href="#skill" onclick="toggleMenu()">Skills</a></li>
+      <li> <a href="#project" onclick="toggleMenu()">Projects</a></li>
+      <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
+<!--------------profile----------------------->
+<section id="profile">
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Narmatha Subramanian</h1>
+    <p class="section__text__p2">Frontend Developer</p>
+    <div class="btn-container">
+      <button class="btn btn-color-1" 
+      onclick="window.open('./assets/images/Narmatha-Resume.pdf')"
+      >Download CV</button>
+      <button class="btn btn-color-2" 
+      onclick="location.href='./#contact'"
+      >Contact Info</button>
+    </div>
+    <div id="socials-container">
+      <img src="./assets/images/linkedin.png" alt="My linkedin profile" 
+      class="icon" onclick="location.href='https://www.linkedin.com/in/narmatha-subramanian-50952722a'">
+      <img src="./assets/images/Github.png" alt="My GitHub profile" 
+      class="icon" onclick="location.href='https:github.com/Narmathasubramaniyan?tab=repositories'">
+    </div>
+  </div>
+</section>
+
+<!--------------about----------------------->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="about-details-container">
+    <div class="about-container">
+      <div class="details-container">
+        <img 
+        src="./assets/images/education.jpeg" 
+        alt="Education icon" class="icon"
+        >
+        <h3>Education</h3>
+      <p>B.Sc (Information Technology) <br>Percentage : 80%</p>
+       <p> M.Sc (Information Technology) <br>Percentage : 81%</p>
+    </div>
+      </div>
+      <div class="text-container">
+     <p>Hello there! I'm Narmatha,
+       and I'm thrilled to share a bit about my journey and enthusiasm for web development.
+      With a Master's degree in Information Technology, I graduated with a solid academic performance, earning 81%.
+      Beyond the numerical achievements, my academic path has equipped me with theoretical knowledge that has ignited a passionate drive to explore the practical and creative realms of web development.</p>
+      <br>
+      <p>I am currently learning FullStack Development.</p>  
+    </div>
+  </div>
+  <img src="./assets/images/downarrow.png" alt="Arrow icon" 
+  class="icon arrow" onclick="location.href='#skill'">
+</section>
+
+<!--------------skills----------------------->
+<section id="skill">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+  <div class="skills-details-container">
+    <div class="about-container">
+      <div class="details-container">
+      <h2 class="skills-sub-title">Frontend Development</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>HTML</h3>
+            <p>Experienced</p>
+           </div>
+        </article>
+        <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>CSS</h3>
+            <p>Experienced</p>
+           </div>
+        </article>
+        <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>JavaScript</h3>
+            <p>Basic</p>
+           </div>
+          </article>
+          <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>React-JS</h3>
+            <p>Basic</p>
+           </div>
+        </article>
+      </div>
+    </div>
+    <div class="details-container">
+      <h2 class="skills-sub-title">Backend Development</h2>
+      <div class="article-container">
+        <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>MySQL</h3>
+            <p>Basic</p>
+           </div>
+        </article>
+        <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>PostgreSQL</h3>
+            <p>Basic</p>
+           </div>
+        </article>
+        <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>Node JS</h3>
+            <p>Basic</p>
+           </div>
+          </article>
+          <article>
+          <img src="./assets/images/tick2.png" 
+          alt="Skills icon"
+           class="icon">
+           <div>
+            <h3>Express JS</h3>
+            <p>Basic</p>
+           </div>
+        </article>
+      </div>
+    </div>
+    </div>
+  </div>
+  <img src="./assets/images/downarrow.png" alt="Arrow icon" 
+  class="icon arrow" onclick="location.href='#project'">
+</section>
+
+<!--------------projects----------------------->
+<section id="project">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="skills-details-container"></div>
+  <div class="about-container">
+  <div class="details-container color-container">
+    <div class="article-container">
+      <img src="./assets/images/project1.png" 
+      alt="project image" 
+      class="project-img">
+    </div>
+    <h2 class="skills-sub-title project-title">Gym Web Application</h2>
+    <div class="btn-container">
+      <button class="btn btn-color-1 project-btn" onclick="location.
+      href='https://github.com/Narmathasubramaniyan/Gym-Web-Application'">GitHub</button>
+      <button class="btn btn-color-1 project-btn" onclick="location.
+      href='https://narmathasubramaniyan.github.io/Gym-Web-Application/'">Live Demo</button>
+    </div>
+  </div>
+  <div class="details-container color-container">
+    <div class="article-container">
+      <img src="./assets/images/project3.png" 
+      alt="project image" 
+      class="project-img">
+    </div>
+    <h2 class="skills-sub-title project-title">Login Authentication [Flutter]</h2>
+    <div class="btn-container">
+      <button class="btn btn-color-1 project-btn" onclick="location.
+      href='https://github.com/Narmathasubramaniyan/Flutter-emailauthentication'">GitHub</button>
+      <button class="btn btn-color-1 project-btn" onclick="location.
+      href='https://github.com/Narmathasubramaniyan/Flutter-emailauthentication'">Live Demo</button>
+    </div>
+  </div>
+  <div class="details-container color-container">
+    <div class="article-container">
+      <img src="./assets/images/project2.jpeg" 
+      alt="project image" 
+      class="project-img">
+    </div>
+    <h2 class="skills-sub-title project-title">E-Commerce [Python]</h2>
+    <div class="btn-container">
+      <button class="btn btn-color-1 project-btn" onclick="location.
+      href='https://github.com/Narmathasubramaniyan/E-commerce'">GitHub</button>
+      <button class="btn btn-color-1 project-btn" onclick="location.
+      href='https://github.com/Narmathasubramaniyan/E-commerce.git'">Live Demo</button>
+    </div>
+  </div>
+  </div>
+  <img src="./assets/images/downarrow.png" alt="Arrow icon" 
+  class="icon arrow" onclick="location.href='#contact'">
+</section>
+
+<!--------------contact----------------------->
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./assets/images/email.png" 
+      alt="email icon"
+       class="icon contact-icon email-icon">
+      <p><a href="mailto:narmat2001@gmail.com">narmat2001@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img src="./assets/images/linkedin1.png" 
+      alt="linkedin icon"
+       class="icon contact-icon">
+       <p><a href="https://www.linkedin.com/in/narmatha-subramanian-50952722a">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+<!--------------footer----------------------->
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li> <a href="#about">About</a></li>
+        <li> <a href="#skill">Skills</a></li>
+        <li> <a href="#project">Projects</a></li>
+        <li> <a href="#contact" >Contact</a></li> 
+    </ul> 
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Narmatha. All Rights Reserved.</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
